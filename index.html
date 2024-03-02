@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="style.css" type="text/css"> 
+
+  
+</head>
+
+<body>
+
+  <section class="back">
+
+    <img class="top_img" src="assets/images/pattern-bg-desktop.png">
+    <div class="map" id="map"></div>
+
+  </section>
+
+  <section class="front">
+
+    <form class="block_browser">
+      <h1>IP Address Tracker</h1>
+      <div class="browser">
+        <input type="text" id="ipInput" placeholder="Search for any IP address">
+        <div class="icon" onclick="trackIP()"><img src="assets/images/icon-arrow.svg"></div>
+      </div>
+    </form>
+
+    <div class="container">
+      <div class="block">
+        <div class="block_name">IP ADDRESS</div>
+        <div class="block_cont" id="ipAddress"></div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block_name">LOCATION</div>
+        <div class="block_cont" id="location"></div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block_name">TIMEZONE</div>
+        <div class="block_cont" id="timezone"></div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block_name">ISP</div>
+        <div class="block_cont" id="domain"></div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
